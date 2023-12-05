@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import { useContext } from 'react';
 import { ApiContext } from './contexts/ApiProvider';
+import { ApiSearchForm } from './components/ApiSearchForm';
 
 function App() {
 
@@ -10,7 +11,8 @@ function App() {
   return (
     <div className="App">
 
-      <h1>{apiUrl}</h1>
+      {/* <h1>{apiUrl}</h1> */}
+      <ApiSearchForm />
 
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
