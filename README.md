@@ -2,7 +2,7 @@
 
 - Definite goals:
 	- [x] deployment
-	- [ ] manage an API URL via global state 
+	- [x] manage an API URL via global state 
 		- Ed lesson: https://edstem.org/au/courses/11863/lessons/42976/slides/295168 
 	- [ ] implement a form
 - Nice-to-haves:

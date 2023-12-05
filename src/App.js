@@ -1,9 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
+import { useContext } from 'react';
+import { ApiContext } from './contexts/ApiProvider';
 
 function App() {
+
+  let apiUrl = useContext(ApiContext);
+
   return (
     <div className="App">
+
+      <h1>{apiUrl}</h1>
+
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
