@@ -7,7 +7,7 @@
 	- [x] implement a form
 	- [x] manage an API URL via global state AND via ENV variables
 		- [x] improve our package.json command OR set up a .ENV file to use ENV variables
-		- [ ] improve our Netlify to use ENV variables 
+		- [x] improve our Netlify to use ENV variables 
 	- [ ] render data from global state 
 		- [ ] should update when global state updates
 - Nice-to-haves:
