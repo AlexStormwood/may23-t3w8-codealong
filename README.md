@@ -10,6 +10,9 @@
 		- [x] improve our Netlify to use ENV variables 
 	- [x] render data from global state 
 		- [x] should update when global state updates
+	- [ ] Pokemon team CRUD 
+		- [ ] add and remove Pokemon from team 
+		- [x] save team to localstorage 
 - Nice-to-haves:
 	- [x] CSS framework (eg. React Bootstrap)
 	- [ ] API that uses other HTTP verbs (eg. fetch with POST/PUT/DELETE)
