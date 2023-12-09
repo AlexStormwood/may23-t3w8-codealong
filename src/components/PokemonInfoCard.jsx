@@ -24,14 +24,32 @@ function BasicExample() {
 
 */
 
+import { useContext } from 'react';
 import Card from 'react-bootstrap/Card';
+import { PokemonTeamContext } from '../contexts/PokemonDataProvider';
+import { Button } from 'react-bootstrap';
 
 export default function PokemonInfoCard(props){
+
+  let {team, setTeam} = useContext(PokemonTeamContext);
+
+  const deletePokemonFromTeam = (providedId) => {
+    // find and delete Pokemon with matching ID from team context
+    let teamCopy = JSON.parse(JSON.stringify(team));
+    teamCopy = teamCopy.filter((obj) => {
+      return obj.id !== providedId;
+    });
+
+    // set the updated team to context 
+    setTeam(teamCopy);
+  }
+
 	return(
 		<Card className="pokemonInfoCard">
 			<Card.Body>
 				<Card.Title>{props.name}</Card.Title>
 				<Card.Img src={props.imageUrl} alt="Default front sprite from PokeAPI"/>
+        <Button onClick={(event) => deletePokemonFromTeam(props.pokemonId)} variant="outline-primary">Delete</Button>
 			</Card.Body>
 		</Card>
 	)
